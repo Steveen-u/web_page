@@ -1,0 +1,132 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+  }
+  body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  .inactive {
+    display: none;
+  }
+  .navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 4.8px 0px ;
+    height: 65px;
+    width: 100%;
+  }
+  .nav_left{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+  }
+  .nav_left i{
+    margin-top: 30px;    
+    align-items: center;
+    cursor: pointer;
+    margin-left: 15px;
+   
+}
+
+.imagen{
+    width: 200px;
+    height: 60px;
+    object-fit: cover;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.nav_right{
+    width: 60%;
+    
+}
+.buttons{
+    margin-top: 15px;
+}
+.buttons button{
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #dfe2e7;
+    cursor: pointer;
+    margin-bottom: 10px;
+    
+}
+#buscar{
+    border-radius: 1.5rem;
+    padding: 8px 40px 8px 12px;
+    padding-right: 30px;
+    border: none;
+}
+.search{
+    position: relative;
+    display: inline-block;
+}
+.buttons .fa-user{
+    align-items: right;
+    cursor: pointer;
+    margin-left: 40px;
+    
+}
+.fa-magnifying-glass{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #dfe2e7;
+}
+.buttons i{
+    color: #dfe2e7;
+    margin-left: 10px;
+    cursor : pointer;
+}
+.cartelera{
+    width: 200px;
+    height: auto;
+    position: absolute;
+    background-color: #383838;
+    margin-top: 75px;
+    margin-left: 506px;
+    border-radius: 8px;
+}
+.estrenos{
+    width: 200px;
+    height: auto;
+    position: absolute;
+    background-color: #383838;
+    margin-top: 75px;
+    margin-left: 613px;
+    border-radius: 8px;
+}
+.other{
+        width: 150px;
+        height: auto;
+        position: absolute;
+        background-color: #383838;
+        margin-top: 75px;
+        margin-left: 750px;
+        border-radius: 8px;
+}
+.users{
+         width: 150px;
+        height: auto;
+        position: absolute;
+        background-color: #383838;
+        margin-top: 75px;
+        margin-left: 1195px;
+        border-radius: 8px;
+    }
+.Peliculas{
+    width: 100%;
+    height: 600px;
+    background-color: #dfe2e7;
+}
