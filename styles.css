@@ -8,9 +8,27 @@
     --md: 16px;
     --lg: 18px;
   }
+  @font-face {
+    font-family:'Arlon';
+    src: url('./fonts/Arlon-Bold.woff2')format('woff2'),
+        url('./fonts/Arlon-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family:'Source Sans Pro';
+    src: url('./fonts/SourcesSansPro-Regular.woff2')format('woff2'),
+        url('./fonts/SourcesSansPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
   body {
     margin: 0;
     font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
   
   .inactive {
@@ -19,7 +37,11 @@
   .navbar{
     display: flex;
     flex-direction: row;
-    background-color: var(--black);
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #4B0082;
     color: var(--white);
     padding: 4.8px 0px ;
     height: 65px;
@@ -125,8 +147,129 @@
         margin-left: 1195px;
         border-radius: 8px;
     }
-.Peliculas{
-    width: 100%;
-    height: 600px;
-    background-color: #dfe2e7;
+    .menu_hamburguesa{
+      width: 200px;
+      height: auto;
+      position: absolute;
+      background-color: #383838;
+      margin-top: 75px;
+      margin-left: 30px;
+      border-radius: 8px;
+    }
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px;
 }
+
+  h1{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    margin-top: 120px;
+    font-family: 'Arlon', sans-serif;
+    text-size-adjust: 20px;
+  }
+.cards_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    gap: 26px;
+    place-content: center;
+    margin-bottom: 80px;
+    z-index: 0;
+  }
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #4B0082;
+    width: 260px;
+    height: 380px;
+    margin-top: 10px;
+    margin-right: 10px;
+    align-items: center;
+    border-radius: 20px;
+  }
+  .product-card:hover{
+    transform: scale(1.1);
+  }
+  .product-card img {
+    width: 200px;
+    height: 240px;
+    border-radius: 20px;
+    margin-top: 15px;
+    object-fit: cover;
+    
+  }
+  .product-card .product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    width: 80%;
+    height: 100px;
+  }
+  .product-card .product-info figure {
+    display: flex;
+    align-items: center;
+  }
+  .product-card .product-info figure {
+    margin-left: 10px;
+  }
+  .product-card .product-info div p:nth-child(1) {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: var(--md);
+  }
+  .product-card .product-info div p:nth-child(2) {
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--very-light-pink);
+  }
+  .product-card .product-info div p:nth-child(3) {
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--very-light-pink);
+  }
+  .product-card .product-info div p:nth-child(4) {
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--very-light-pink);
+  }
+  .fa-heart{
+    color: #e03a08;
+    cursor : pointer;
+  }
+  .like{
+    color: #000000;
+    cursor: pointer;
+  }
+  footer{
+
+  bottom: 0;
+  width: 100%;
+    background-color: #4B0082; 
+  }
+    
+  .footer_left{
+    width: 30%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer_left img{
+    width: 200px;
+    height: 250px;
+    margin-right: 5px;
+  }
